@@ -3,4 +3,4 @@ from .models import *
 
 # Register your models here.
 
-admin.site.register([Sale, Entry, Item])
+admin.site.register([Sale, Entry, Item, Shop])

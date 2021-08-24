@@ -6,3 +6,6 @@ from django.contrib.auth.models import User
 class Bussiness(models.Model):
     name = models.CharField(max_length=100)
     owner = models.ForeignKey(User, verbose_name='owner', related_name='bussiness', on_delete=models.CASCADE, default=1)
+    details = models.JSONField(verbose_name="details", default=dict)
+
+    def __str__(self): return f"{self.name}"
