@@ -16,7 +16,7 @@ class Sale(models.Model):
 
 class Template(models.Model):
     name = models.CharField(max_length=256)
-    struct = models.JSONField(verbose_name="structure")
+    struct = models.JSONField(verbose_name="structure", default='{}')
 
 
 
